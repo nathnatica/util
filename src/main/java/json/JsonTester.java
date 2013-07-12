@@ -14,9 +14,9 @@ public class JsonTester {
 
         File expected = new File("C:\\temp");
         File actual = new File("C:\\temp");
-
         
         checkDirectories(expected, actual);
+        checkDirectories(actual, expected);
     }
 
     static class CheckJob implements Runnable {
