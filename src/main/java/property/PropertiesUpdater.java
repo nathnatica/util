@@ -8,7 +8,7 @@ public class PropertiesUpdater {
 
     public static void main(String args[]) {
 
-        final String filePath = "C:\\temp\\";
+        final String filePath = "C:\\tmp\\";
         
         File fileOld = new File(filePath + "old.properties");
         File fileNew = new File(filePath + "new.properties");
@@ -29,7 +29,7 @@ public class PropertiesUpdater {
                 if (line.contains("=")) {
                     try {
                         String key = line.substring(0, line.indexOf("=")).trim();
-                        String value = line.substring(line.indexOf("=") + 1, line.length()).trim();
+                        String value = line.substring(line.indexOf("=") + 1, line.length());
                         mapOld.put(key, value);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -43,7 +43,7 @@ public class PropertiesUpdater {
                 if (line.contains("=")) {
                     try {
                         String key = line.substring(0, line.indexOf("=")).trim();
-                        String value = line.substring(line.indexOf("=") + 1, line.length()).trim();
+                        String value = line.substring(line.indexOf("=") + 1, line.length());
                         mapNew.put(key, value);
                     } catch (Exception e) {
                         e.printStackTrace();
