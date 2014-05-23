@@ -10,9 +10,9 @@ public class PropertiesUpdater {
 
         final String filePath = "C:\\tmp\\";
         
-        File fileOld = new File(filePath + "old.properties");
-        File fileNew = new File(filePath + "new.properties");
-        File fileUpdated = new File(filePath + "merged.properties");
+        File fileOld = new File(filePath + "front_excel.properties");
+        File fileNew = new File(filePath + "front_en_US.properties");
+        File fileUpdated = new File(filePath + "front_merged.properties");
 
         make(fileOld, fileNew, fileUpdated);
 
