@@ -89,10 +89,10 @@ public class GuavaTest {
 		String id2 = CharMatcher.inRange('a', 'h').removeFrom(id);
         System.out.println(id2); // Jon
         
-        CharMatcher.JAVA_WHITESPACE
-        CharMatcher.ASCII
-               
-                CharMatcher.is('');
+//        CharMatcher.JAVA_WHITESPACE
+//        CharMatcher.ASCII
+//               
+//                CharMatcher.is('');
         
             
         
